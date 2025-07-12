@@ -1,0 +1,40 @@
+{
+  "name": "nextjs-app",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "nextjs-app/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "next dev --turbopack",
+        "cwd": "nextjs-app"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "next build",
+        "cwd": "nextjs-app"
+      },
+      "outputs": [
+        "{projectRoot}/.next"
+      ]
+    },
+    "start": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "next start",
+        "cwd": "nextjs-app"
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "next lint",
+        "cwd": "nextjs-app"
+      }
+    }
+  }
+}
