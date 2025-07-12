@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "./nx dev nextjs-app",
+    "dev": "cd nextjs-app && npm run dev",
+    "dev:nx": "./nx dev nextjs-app",
     "build": "./nx build nextjs-app",
     "start": "./nx start nextjs-app",
     "lint": "./nx lint nextjs-app"

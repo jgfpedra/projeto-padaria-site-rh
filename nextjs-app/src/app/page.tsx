@@ -4,7 +4,6 @@ import {
   Header,
   HeroSection,
   JobApplicationForm,
-  HistorySection,
   Footer
 } from "@/components";
 
@@ -14,7 +13,6 @@ export default function Home() {
       <Header />
       <HeroSection />
       <JobApplicationForm />
-      <HistorySection />
       <Footer />
     </div>
   );

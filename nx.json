@@ -7,5 +7,6 @@
   "defaultProject": "nextjs-app",
   "projects": {
     "nextjs-app": "nextjs-app"
-  }
+  },
+  "daemon": false
 }
